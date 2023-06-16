@@ -32,3 +32,18 @@ Using the metric of RMSE, I was able to assess the performance of the final mode
 ---
 
 ## Fairness Analysis
+For my fairness analysis, I chose Group X as the recipes with a number of ingredients less than or equal to the medium number of ingredients, and Group Y as recipes with a number of ingredients greater than the median number of ingredients. The evaluation metric was root mean squared error (RMSE). 
+
+Null Hypothesis:
+The RMSE for Group X and Group Y are around the same, and any differences are due to random choice. The model is fair.
+
+Alternative Hypothesis:
+The RMSE for Group X is difference from the RMSE of Group Y. The model is not fair.
+
+Test Statistic:
+The difference in RMSE between Group X and Group Y
+Significance Level: 0.05
+P-value: 0.1147
+
+Conclusion:
+Becauase the calculated p-value is greater than the significance level, we fail to reject the null hypothesis, which means that the difference between the RMSE is likely due to random chance, suggesting that the model is fair when looking at the number of ingredients.
