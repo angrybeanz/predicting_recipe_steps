@@ -20,6 +20,14 @@ The difference of 6 steps seems to not amazing for the purposes of our model due
 ---
 
 ## Final Model
+I added two new features:
+'description_len': This calculated the length of each recipe's description, or in other words the number of words in each recipe's description. I thought that longer description names could correspond to more complex recipes, which might increase the number of steps in the recipe. On the other hand, recipe's with shorter descriptions might
+have less complicated recipes and thus fewer steps. 
+'minutes_per_ingredient': To create this feature, I divided the number of minutes by the the number of ingredients ('minutes'/'n_ingredients'), which goes to show around the number of minutes spent per ingredient. Longef time for ingredients could mean more complicated steps and thus more steps.
+
+I chose the RandomForest Regressor as the final model because the model can handle a lot of features at once and uses averaging to improve the predictive accuracy and control over-fitting. The hyperparameters in RandomForestRegressor can influence the model performance, and I used grid search to find the optimal hyperparameter combination using 'n_estimators', which are the number of trees in the forest, and 'max_depth', which is the limit that the tree can go to. The best combination in cross validation was used, and those were an 'n_estimator' of 100 and a 'max_depth' of 20. 
+
+Using the metric of RMSE, I was able to assess the performance of the final model. The RMSE of the final model was 4.7090177611603545, which I found when predicting the model on unseen data. This is an improvement of the baseline model by around 1, and could be credited to the additional of new features and a more complex model that was used to tune the hyperparameters using grid search.
 
 ---
 
