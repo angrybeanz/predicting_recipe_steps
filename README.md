@@ -15,7 +15,7 @@ For my baseline model, I used the features minutes and number of ingredients (n_
 
 The difference of 6 steps seems to not amazing for the purposes of our model due to distribution of counts of number of steps to be right tailed, and most of the recipes have a range of between 2-30 steps, meaning there is room for improvement to decrease the difference. 6 steps could be quie significant for that small range of steps. The consequences of on average 6 extra or fewer steps could be significant because it could be considered a lot of extra or fewer steps in a range of 2-30 total steps. Therefore, I think the current model is not good, but it isn't terrible.
 
-<iframe src="assets/steps_distribution.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/steps-distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
