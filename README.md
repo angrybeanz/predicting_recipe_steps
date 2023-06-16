@@ -40,9 +40,11 @@ The RMSE for Group X and Group Y are around the same, and any differences are du
 Alternative Hypothesis:
 The RMSE for Group X is difference from the RMSE of Group Y. The model is not fair.
 
-Test Statistic:
+Test Statistic: 
 The difference in RMSE between Group X and Group Y
+
 Significance Level: 0.05
+
 P-value: 0.1147
 
 Conclusion:
